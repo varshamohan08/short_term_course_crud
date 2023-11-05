@@ -1,0 +1,16 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}My Website{% endblock %}</title>
+</head>
+<body>
+    {% include 'header.html' %}
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    {% include 'footer.html' %}
+</body>
+</html>
